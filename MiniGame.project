@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Project Name="MiniGame" Version="10.0.0" InternalType="Console">
+  <Description/>
+  <Dependencies/>
+  <Settings Type="Executable">
+    <GlobalSettings>
+      <Compiler Options="" C_Options="" Assembler="">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="">
+        <LibraryPath Value="."/>
+      </Linker>
+      <ResourceCompiler Options=""/>
+    </GlobalSettings>
+    <Configuration Name="Debug" CompilerType="GCC" DebuggerType="GNU gdb debugger" Type="Executable" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-g;-O0;-Wall" C_Options="-g;-O0;-Wall" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="$(IntermediateDirectory)/$(ProjectName)" IntermediateDirectory="./Debug" Command="./$(ProjectName)" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <BuildSystem Name="Default"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="yes">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no" EnableCpp14="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+    <Configuration Name="Release" CompilerType="GCC" DebuggerType="GNU gdb debugger" Type="Executable" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-O2;-Wall" C_Options="-O2;-Wall" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+        <IncludePath Value="."/>
+        <Preprocessor Value="NDEBUG"/>
+      </Compiler>
+      <Linker Options="" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="$(IntermediateDirectory)/$(ProjectName)" IntermediateDirectory="./Release" Command="./$(ProjectName)" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <BuildSystem Name="Default"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="no">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no" EnableCpp14="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+  </Settings>
+  <VirtualDirectory Name="src">
+    <File Name="main.cpp"/>
+    <VirtualDirectory Name="Items">
+      <File Name="Item.cpp"/>
+      <File Name="Item.h"/>
+      <File Name="Inventory.cpp"/>
+      <File Name="Inventory.h"/>
+      <VirtualDirectory Name="Potions">
+        <File Name="Potion.cpp"/>
+        <File Name="Potion.h"/>
+        <File Name="HealPotion.cpp"/>
+        <File Name="HealPotion.h"/>
+        <File Name="MagicPotion.cpp"/>
+        <File Name="MagicPotion.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="Armors">
+        <File Name="Armor.cpp"/>
+        <File Name="Armor.h"/>
+        <File Name="CthulhusSkin.cpp"/>
+        <File Name="CthulhusSkin.h"/>
+        <File Name="GoldArmor.cpp"/>
+        <File Name="GoldArmor.h"/>
+        <File Name="IronArmor.cpp"/>
+        <File Name="IronArmor.h"/>
+        <File Name="LeatherArmor.cpp"/>
+        <File Name="LeatherArmor.h"/>
+        <File Name="Naked.cpp"/>
+        <File Name="Naked.h"/>
+        <File Name="SilverArmor.cpp"/>
+        <File Name="SilverArmor.h"/>
+        <File Name="WoodenArmor.cpp"/>
+        <File Name="WoodenArmor.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="Weapons">
+        <File Name="CthulhusDagger.cpp"/>
+        <File Name="CthulhusDagger.h"/>
+        <File Name="CthulhusFists.cpp"/>
+        <File Name="CthulhusFists.h"/>
+        <File Name="CthulhusStick.cpp"/>
+        <File Name="CthulhusStick.h"/>
+        <File Name="CthulhusSword.cpp"/>
+        <File Name="CthulhusSword.h"/>
+        <File Name="ElmStick.cpp"/>
+        <File Name="ElmStick.h"/>
+        <File Name="Fists.cpp"/>
+        <File Name="Fists.h"/>
+        <File Name="GoldDagger.cpp"/>
+        <File Name="GoldDagger.h"/>
+        <File Name="GoldSword.cpp"/>
+        <File Name="GoldSword.h"/>
+        <File Name="IronDagger.cpp"/>
+        <File Name="IronDagger.h"/>
+        <File Name="IronSword.cpp"/>
+        <File Name="IronSword.h"/>
+        <File Name="OakStick.cpp"/>
+        <File Name="OakStick.h"/>
+        <File Name="SilverDagger.cpp"/>
+        <File Name="SilverDagger.h"/>
+        <File Name="SilverSword.cpp"/>
+        <File Name="SilverSword.h"/>
+        <File Name="Weapon.cpp"/>
+        <File Name="Weapon.h"/>
+        <File Name="WoodenDagger.cpp"/>
+        <File Name="WoodenDagger.h"/>
+        <File Name="WoodenStick.cpp"/>
+        <File Name="WoodenStick.h"/>
+        <File Name="WoodenSword.cpp"/>
+        <File Name="WoodenSword.h"/>
+        <File Name="YewStick.cpp"/>
+        <File Name="YewStick.h"/>
+      </VirtualDirectory>
+    </VirtualDirectory>
+    <VirtualDirectory Name="Skills">
+      <File Name="AcidVomit.cpp"/>
+      <File Name="AcidVomit.h"/>
+      <File Name="Amputate.cpp"/>
+      <File Name="Amputate.h"/>
+      <File Name="Bite.cpp"/>
+      <File Name="Bite.h"/>
+      <File Name="BlackPlague.cpp"/>
+      <File Name="BlackPlague.h"/>
+      <File Name="Comet.cpp"/>
+      <File Name="Comet.h"/>
+      <File Name="Cure.cpp"/>
+      <File Name="Cure.h"/>
+      <File Name="EarthQuake.cpp"/>
+      <File Name="EarthQuake.h"/>
+      <File Name="ElectricalHit.cpp"/>
+      <File Name="ElectricalHit.h"/>
+      <File Name="FireHit.cpp"/>
+      <File Name="FireHit.h"/>
+      <File Name="FireShot.cpp"/>
+      <File Name="FireShot.h"/>
+      <File Name="FireSplit.cpp"/>
+      <File Name="FireSplit.h"/>
+      <File Name="FireWings.cpp"/>
+      <File Name="FireWings.h"/>
+      <File Name="FrozenHit.cpp"/>
+      <File Name="FrozenHit.h"/>
+      <File Name="FrozenRain.cpp"/>
+      <File Name="FrozenRain.h"/>
+      <File Name="FrozenWind.cpp"/>
+      <File Name="FrozenWind.h"/>
+      <File Name="HeadButt.cpp"/>
+      <File Name="HeadButt.h"/>
+      <File Name="Hell.cpp"/>
+      <File Name="Hell.h"/>
+      <File Name="IceCube.cpp"/>
+      <File Name="IceCube.h"/>
+      <File Name="IcedTailStroke.cpp"/>
+      <File Name="IcedTailStroke.h"/>
+      <File Name="InfectedBite.cpp"/>
+      <File Name="InfectedBite.h"/>
+      <File Name="InfectedScratch.cpp"/>
+      <File Name="InfectedScratch.h"/>
+      <File Name="MagicSkill.cpp"/>
+      <File Name="MagicSkill.h"/>
+      <File Name="PhysicSkill.cpp"/>
+      <File Name="PhysicSkill.h"/>
+      <File Name="Plague.cpp"/>
+      <File Name="Plague.h"/>
+      <File Name="PoisonShot.cpp"/>
+      <File Name="PoisonShot.h"/>
+      <File Name="PoisonWave.cpp"/>
+      <File Name="PoisonWave.h"/>
+      <File Name="PoisonousHit.cpp"/>
+      <File Name="PoisonousHit.h"/>
+      <File Name="Scratch.cpp"/>
+      <File Name="Scratch.h"/>
+      <File Name="ShopFinely.cpp"/>
+      <File Name="ShopFinely.h"/>
+      <File Name="Skill.cpp"/>
+      <File Name="Skill.h"/>
+      <File Name="StaticChoc.cpp"/>
+      <File Name="StaticChoc.h"/>
+      <File Name="Stigmata.cpp"/>
+      <File Name="Stigmata.h"/>
+      <File Name="TacticSkill.cpp"/>
+      <File Name="TacticSkill.h"/>
+      <File Name="TailStroke.cpp"/>
+      <File Name="TailStroke.h"/>
+      <File Name="ThunderHit.cpp"/>
+      <File Name="ThunderHit.h"/>
+      <File Name="Trample.cpp"/>
+      <File Name="Trample.h"/>
+      <File Name="YellWave.cpp"/>
+      <File Name="YellWave.h"/>
+      <File Name="Rape.h"/>
+      <File Name="Rape.cpp"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="Status">
+      <File Name="BleedingStatus.cpp"/>
+      <File Name="BleedingStatus.h"/>
+      <File Name="BurnedStatus.cpp"/>
+      <File Name="BurnedStatus.h"/>
+      <File Name="FrozenStatus.cpp"/>
+      <File Name="FrozenStatus.h"/>
+      <File Name="NormalStatus.cpp"/>
+      <File Name="NormalStatus.h"/>
+      <File Name="PoisonedStatus.cpp"/>
+      <File Name="PoisonedStatus.h"/>
+      <File Name="Status.cpp"/>
+      <File Name="Status.h"/>
+      <File Name="StimulatedStatus.cpp"/>
+      <File Name="StimulatedStatus.h"/>
+      <File Name="StunnedStatus.cpp"/>
+      <File Name="StunnedStatus.h"/>
+    </VirtualDirectory>
+    <File Name="includes.h"/>
+    <VirtualDirectory Name="LivingBeeings">
+      <File Name="LivingBeeing.cpp"/>
+      <File Name="LivingBeeing.h"/>
+      <VirtualDirectory Name="Monsters">
+        <File Name="GrassGolem.cpp"/>
+        <File Name="GrassGolem.h"/>
+        <File Name="InfectedWolf.cpp"/>
+        <File Name="InfectedWolf.h"/>
+        <File Name="LivingTree.cpp"/>
+        <File Name="LivingTree.h"/>
+        <File Name="Monster.cpp"/>
+        <File Name="Monster.h"/>
+        <File Name="Mutant.cpp"/>
+        <File Name="Mutant.h"/>
+        <File Name="Rodent.cpp"/>
+        <File Name="Rodent.h"/>
+        <File Name="Rogue.cpp"/>
+        <File Name="Rogue.h"/>
+        <File Name="Titan.cpp"/>
+        <File Name="Titan.h"/>
+        <File Name="Wyvern.cpp"/>
+        <File Name="Wyvern.h"/>
+        <File Name="Zombie.cpp"/>
+        <File Name="Zombie.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="Characters">
+        <File Name="Barbarian.cpp"/>
+        <File Name="Barbarian.h"/>
+        <File Name="Character.cpp"/>
+        <File Name="Character.h"/>
+        <File Name="Cthulhu.cpp"/>
+        <File Name="Cthulhu.h"/>
+        <File Name="Thief.cpp"/>
+        <File Name="Thief.h"/>
+        <File Name="Wizard.cpp"/>
+        <File Name="Wizard.h"/>
+      </VirtualDirectory>
+    </VirtualDirectory>
+  </VirtualDirectory>
+</CodeLite_Project>
